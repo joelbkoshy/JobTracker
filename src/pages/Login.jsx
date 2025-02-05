@@ -22,7 +22,7 @@ const Login = () => {
             })
 
             if (loginResponse.status === 200) {
-                localStorage.setItem('userID', loginResponse.data.userID)
+                localStorage.setItem('token', loginResponse.data.token)
                 navigate('/dashboard')
             }
 
