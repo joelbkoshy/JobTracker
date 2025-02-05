@@ -1,0 +1,180 @@
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.login-leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    background: transparent;
+    position: relative;
+    z-index: 105;
+}
+
+.login-leftMainContainer {
+    /* background-color: antiquewhite; */
+    padding: 1rem;
+    background-color: var(--bg-color);
+}
+
+.login-leftMainContainer h1 {
+    text-align: center;
+}
+
+.login-leftMainContainer h4 {
+    text-align: center;
+}
+
+.login-leftInputItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-leftInputIndividual {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.83rem;
+    font-weight: bold;
+}
+
+.login-leftForgotPasswordContainer {
+    display: flex;
+    width: 100%;
+    height: 1.5rem;
+    padding-top: 1rem;
+    justify-content: center;
+    color: #8b8d93;
+    align-items: center;
+    text-align: center;
+}
+
+.login-RegisterLinkContainer {
+    display: flex;
+    /* width: 67%; */
+    height: 1.5rem;
+    padding-top: 1rem;
+    justify-content: center;
+    color: #8b8d93;
+    align-items: center;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.login-rightContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.login-ImageContainer {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.login-ImageContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+    object-position: center;
+
+
+}
+
+.login-leftButtonContainer {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.login-leftButtonContainer button {
+    width: 14.5rem;
+    text-align: center;
+}
+
+.login-leftButtonContainer .login {
+
+    background-color: #73f7fd;
+    text-align: center;
+}
+
+.login-hiphenContainer {
+    padding-top: 5%;
+    padding-left: 0.2rem;
+    text-align: center;
+}
+
+.login-GooglebtnContainer {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.login-GooglebtnContainer button {
+    width: 14.5rem;
+    text-align: center;
+
+}
+
+.googleBtn {
+    width: 100%;
+    height: 100%;
+}
+
+.googleButtonAssets {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.googleImgContainer {
+    padding: 2%;
+    background-color: #ffff;
+    width: 20%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.googleImgContainer img {
+    width: 20px;
+    height: 25px;
+}
+
+@media screen and (max-width:1109px) {
+
+    .login-rightContainer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-ImageContainer img{
+        clip-path: none;
+    }
+    
+}

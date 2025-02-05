@@ -1,0 +1,309 @@
+/*=========User Dashboard Styles=========*/
+
+/*==zIndex Chart==*/
+/*Main: */
+
+/*==zIndex Chart End==*/
+
+:root {
+    --bg-color: #ffffff;
+    --vib-1: #7df9ff;
+    --vib-2: #2fff2f;
+    --vib-3: #ff00f5;
+    --vib-4: #3300ff;
+    --vib-5: #ffff00;
+    --vib-6: #ff4911;
+    --vin-1: #DAF5F0;
+    --vin-2: #A7DBD8;
+    --vin-3: #87CEEB;
+    --vin-4: #69D2E7;
+    --vin-5: #B5D2AD;
+    --vin-6: #BAFCA2;
+    --vin-7: #90EE90;
+    --vin-8: #7FBCBC;
+    --vin-9: #FDFD96;
+    --vin-10: #FFDB58;
+    --vin-11: #F4D73B;
+    --vin-12: #E3A018;
+    --vin-13: #F8D6B3;
+    --vin-14: #FFA07A;
+    --vin-15: #FF7A5C;
+    --vin-16: #FF6B6B;
+    --vin-17: #FCDFFF;
+    --vin-18: #FFC0CB;
+    --vin-19: #FFB2EF;
+    --vin-20: #FF69B4;
+    --vin-21: #E3DFF2;
+    --vin-22: #C4A1FF;
+    --vin-23: #A388EE;
+    --vin-24: #9723C9;
+    --text-light: #94949d;
+}
+
+.user-dash {
+    position: relative;
+    z-index: 100;
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.user-dash .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 110vw;
+    z-index: 990;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.user-dash .overlay.active {
+    opacity: 1;
+}
+
+.user-dash aside {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 50px 32px 32px;
+    background-color: #fff;
+    height: 100vh;
+    overflow-y: scroll;
+    transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    z-index: 999;
+}
+
+.user-dash aside.active {
+    transform: translateX(0);
+}
+
+.user-dash aside .close-btn {
+    position: absolute;
+    right: 24px;
+    top: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    display: none;
+}
+
+.user-dash aside::-webkit-scrollbar {
+    display: none;
+}
+
+.user-dash aside .side-profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.user-dash aside .side-profile .profile-image {
+    width: 100px;
+    aspect-ratio: 1/1;
+}
+
+.user-dash aside .side-profile .profile-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.user-dash aside .side-profile .profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-dash aside .side-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.user-dash aside .side-stats header {
+    position: relative;
+    width: max-content;
+}
+
+.user-dash aside .side-stats header img.stat-icon {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    rotate: 10deg;
+    z-index: 99;
+}
+
+.user-dash aside .side-stats .head {
+    width: max-content;
+    background-color: var(--vin-8);
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.user-dash aside .side-stats .head .stat-icon {
+    position: absolute;
+    z-index: -1;
+}
+
+.user-dash aside .side-stats .stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 16px;
+}
+
+.user-dash aside .side-stats .stat-flex {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.user-dash aside .side-stats .stat-head {
+    padding-bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.user-dash aside .side-stats .stat-flex .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-dash aside .menu-bar {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.user-dash aside .menu-bar ul.menu-list {
+    list-style-type: none;
+    min-height: 150px;
+    max-height: 30vh;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: hidden;
+}
+
+.user-dash main:not(.al-main):not(.profile-main) {
+    position: relative;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100vw - 400px);
+    z-index: 100;
+}
+
+.user-dash main .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.user-dash main .top-bar .greeting {
+    color: white;
+    background-color: var(--vin-3);
+}
+
+.user-dash main .top-bar .switcher {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.user-dash main .top-bar .switcher .tab {
+    cursor: pointer;
+}
+
+.user-dash main .top-bar .switcher .tab.active {
+
+}
+
+.user-dash main .top-bar .options {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-dash main .top-bar .options button {
+    padding: 10px 16px;
+    aspect-ratio: 1/1;
+    position: relative;
+    font-size: 18px;
+}
+
+.user-dash main .top-bar button.menu-ham {
+    display: none;
+}
+
+.user-dash main .top-bar .options button .notif {
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    background-color: var(--vib-3);
+    padding: 5px 8px;
+    aspect-ratio: 1/1;
+    color: white;
+}
+
+@media screen and (max-width: 1291px) {
+    .user-dash aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-105%);
+    }
+
+    .user-dash main:not(.al-main):not(.profile-main) {
+        width: 100vw;
+    }
+
+    .user-dash main .top-bar {
+        padding: 32px 0;
+    }
+
+    .user-dash main .top-bar button.menu-ham {
+        display: initial;
+        padding: 10px 16px;
+        aspect-ratio: 1/1;
+        position: relative;
+        font-size: 18px;
+    }
+
+    .user-dash aside .close-btn {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .user-dash aside {
+        padding: 50px 16px 16px;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .user-dash aside .side-stats .stat-flex {
+        flex-direction: column;
+    }
+}
+
+/*=========User Dashboard Styles End=========*/

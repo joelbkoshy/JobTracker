@@ -1,0 +1,452 @@
+/*AssignmentBhai StyleSheet*/
+/*Written by https://github.com/HemantDutta*/
+
+/*==Z-Index Chart==*/
+/*Navbar: 999*/
+/*Container: 100*/
+
+
+/*==Z-Index Chart End==*/
+
+/*==========Body Styles==========*/
+
+:root {
+  --bg-color: #ffffff;
+  --vib-1: #7df9ff;
+  --vib-2: #2fff2f;
+  --vib-3: #ff00f5;
+  --vib-4: #3300ff;
+  --vib-5: #ffff00;
+  --vib-6: #ff4911;
+  --vin-1: #DAF5F0;
+  --vin-2: #A7DBD8;
+  --vin-3: #87CEEB;
+  --vin-4: #69D2E7;
+  --vin-5: #B5D2AD;
+  --vin-6: #BAFCA2;
+  --vin-7: #90EE90;
+  --vin-8: #7FBCBC;
+  --vin-9: #FDFD96;
+  --vin-10: #FFDB58;
+  --vin-11: #F4D73B;
+  --vin-12: #E3A018;
+  --vin-13: #F8D6B3;
+  --vin-14: #FFA07A;
+  --vin-15: #FF7A5C;
+  --vin-16: #FF6B6B;
+  --vin-17: #FCDFFF;
+  --vin-18: #FFC0CB;
+  --vin-19: #FFB2EF;
+  --vin-20: #FF69B4;
+  --vin-21: #E3DFF2;
+  --vin-22: #C4A1FF;
+  --vin-23: #A388EE;
+  --vin-24: #9723C9;
+  --text-light: #94949d;
+  --bg-dark: #2d2d2d
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 1px;
+  background-image: radial-gradient(var(--text-light) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-light);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.bold-font {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-font {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+/*==========Body Styles End==========*/
+
+/*==========Text Styles==========*/
+
+.big-head-font {
+  font-size: 56px;
+}
+
+.head-font {
+  font-size: 32px;
+}
+
+.big-text-font {
+  font-size: 24px;
+}
+
+.mid-text-font {
+  font-size: 18px;
+}
+
+.text-font {
+  font-size: 16px;
+}
+
+.sec-text-font {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .big-text-font {
+      font-size: 18px;
+  }
+
+  .big-head-font {
+      font-size: 42px;
+  }
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-white {
+  color: var(--bg-color);
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.text-shadow-light {
+  text-shadow: 4px 6px #000000;
+}
+
+.text-shadow-mid {
+  text-shadow: 6px 8px #000000;
+}
+
+.text-shadow-dark {
+  text-shadow: 8px 10px #000000;
+}
+
+.text-box {
+  padding: 0 10px;
+  display: inline-block;
+  rotate: -2deg;
+  margin: 10px 0;
+}
+
+/*==========Text Styles End==========*/
+
+/*==========Box Shadow & Border Styles==========*/
+
+.shadow-light {
+  box-shadow: 4px 6px #000000;
+}
+
+.shadow-mid {
+  box-shadow: 6px 8px #000000;
+}
+
+.shadow-dark {
+  box-shadow: 8px 10px #000000;
+}
+
+.border-light {
+  border: 2px solid #000000;
+}
+
+.border-mid {
+  border: 4px solid #000000;
+}
+
+.border-dark {
+  border: 6px solid #000000;
+}
+
+.border-white-light {
+  border: 2px solid #ffffff;
+}
+
+.border-white-mid {
+  border: 4px solid #ffffff;
+}
+
+.border-white-dark {
+  border: 6px solid #ffffff;
+}
+
+.shadow-white-light {
+  box-shadow: 4px 6px var(--bg-color);
+}
+
+.shadow-white-mid {
+  box-shadow: 6px 8px var(--bg-color);
+}
+
+.shadow-white-dark {
+  box-shadow: 8px 10px var(--bg-color);
+}
+
+.border-white-light {
+  border: 2px solid var(--bg-color);
+}
+
+.border-white-mid {
+  border: 4px solid var(--bg-color);
+}
+
+.border-white-dark {
+  border: 6px solid var(--bg-color);
+}
+
+.img-shadow-white-light {
+  box-shadow: 4px 6px var(--bg-color);
+}
+
+.img-shadow-white-mid {
+  box-shadow: 6px 8px var(--bg-color);
+}
+
+.img-shadow-white-dark {
+  box-shadow: 8px 10px var(--bg-color);
+}
+
+.img-shadow-light {
+  filter: drop-shadow(4px 6px #000000);
+}
+
+.img-shadow-mid {
+  filter: drop-shadow(6px 8px #000000);
+}
+
+.img-shadow-dark {
+  filter: drop-shadow(8px 10px #000000);
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.rounded-50 {
+  border-radius: 50px;
+}
+
+.rounded-100 {
+  border-radius: 100%;
+}
+
+.bubble-top-left {
+  border-radius: 0 20px 20px 20px;
+}
+
+.bubble-top-right {
+  border-radius: 20px 0 20px 20px;
+}
+
+.bubble-bottom-right {
+  border-radius: 20px 20px 0 20px;
+}
+
+.bubble-bottom-left {
+  border-radius: 20px 20px 20px 0;
+}
+
+.dot-border-bottom {
+  border-bottom: 2px dotted var(--text-light);
+}
+
+/*==========Box Shadow & Border Styles End==========*/
+
+/*==========Common Component Styles==========*/
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a.button-style {
+  padding: 10px 24px;
+  background-color: white;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.button-padding {
+  padding: 10px 24px;
+}
+
+.click, .click-no-shadow {
+  transition: all 0.2s ease;
+}
+
+.click:active {
+  scale: 0.95;
+  box-shadow: 2px 4px #000000;
+}
+
+.click-no-shadow:active {
+  scale: 0.95;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  padding: 0 76px;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+      padding: 0 56px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+      padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+      padding: 0 16px;
+  }
+}
+
+/*==========Common Component Styles End==========*/
+
+/*==========Card Layout Styles==========*/
+
+.card-flex {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.card-flex .card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background-color: #fff;
+  width: 350px;
+}
+
+.card-flex .card .icon {
+  height: 100px;
+  aspect-ratio: 1/1;
+  margin-bottom: 32px;
+}
+
+.card-flex .card .icon img {
+  padding: 10px;
+  background-color: #fff;
+  object-fit: contain;
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .card-flex {
+      justify-content: center;
+  }
+}
+
+.link-card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.link-card .image {
+  height: 450px;
+  width: 100%;
+}
+
+.link-card .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.link-card .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.link-card .cta a {
+  font-size: 24px;
+  color: white;
+}
+
+.link-card .cta a.LinkedIn {
+  background-color: var(--vin-23);
+}
+
+.link-card .cta a.X {
+  background-color: var(--vin-4);
+}
+
+.link-card .cta a.Github {
+  background-color: var(--bg-dark);
+}
+
+@media screen and (max-width: 620px) {
+  .link-card-container {
+      width: 100%;
+  }
+}
+/*==========Card Layout Styles End==========*/
